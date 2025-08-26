@@ -77,6 +77,42 @@
   body {
     background-image: url("../images/bg-weather-tablet.png");
   }
+  .wether__cover {
+    left: 0;
+    height: 55vh;
+    top: auto;
+    right: 0;
+    width: 100%;
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .forecasts {
+    display: none;
+  }
+  .wether__wrapper {
+    flex-direction: column;
+    height: 100%;
+    align-content: space-between;
+  }
+  .wether__details {
+    padding-bottom: 5rem;
+  }
+  .wether__right {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+  .wether__right__cpation {
+    text-align: center;
+  }
+  .wether__ritht__text {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .wether__left {
+    margin-top: 15rem;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {

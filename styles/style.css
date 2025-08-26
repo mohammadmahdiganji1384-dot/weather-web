@@ -1,0 +1,26 @@
+@import "./reset.css";
+@import "./font.css";
+@import "./variable.css";
+@import "./container.css";
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+/* helper class */
+
+a{
+  text-decoration: none;
+}
+
+/* component */
+

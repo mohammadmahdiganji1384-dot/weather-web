@@ -1,0 +1,10 @@
+@import "./font.css";
+
+:root {
+  /* variable fonts */
+  --font-light: "Roboto_Light";
+  --font-regular: "Roboto_Regular";
+  --font-medium: "Roboto_Medium";
+  --font-bold: "Roboto_Bold";
+  --font-black: "Roboto_Black";
+}

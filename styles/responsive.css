@@ -92,15 +92,17 @@
   }
   .wether__wrapper {
     flex-direction: column;
-    height: 100%;
-    align-content: space-between;
+    height: 87vh;
+    align-items: flex-end;
   }
   .wether__details {
     padding-bottom: 5rem;
+    width: 40rem;
   }
   .wether__right {
     margin: 0 auto;
     padding-bottom: 2rem;
+    width: 40rem;
   }
   .wether__right__cpation {
     text-align: center;
@@ -110,13 +112,122 @@
     margin-top: 3rem;
   }
   .wether__left {
-    margin-top: 15rem;
+    margin-top: 14rem;
     margin-right: auto;
+    margin-bottom: 0;
+  }
+  .wether__left__city {
+    font-size: 4rem;
+  }
+  .wether__left__temp {
+    font-size: 6rem;
+  }
+  .wether__left__icon {
+    width: 5rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   body {
     background-image: url("../images/bg-weather-mobile.png");
+  }
+
+  .wether__cover {
+    height: 65vh;
+  }
+  .wether__left {
+    margin-top: 5rem;
+  }
+
+  .wether__left__city {
+    font-size: 3rem;
+  }
+  .wether__left__temp {
+    font-size: 5rem;
+  }
+  .wether__left__icon {
+    width: 4rem;
+  }
+  .wether__left {
+    margin-top: 11rem;
+    gap: 1rem;
+  }
+  .wether__details {
+    width: 100%;
+    max-width: 30rem;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+  .wether__right {
+    width: 100%;
+    max-width: 30rem;
+  }
+.wether__ritht__text{
+    margin-top: 4rem;
+  }
+  .header__search__icon{
+    width: 1.5rem;
+  }
+  .header__search__box{
+    width: 20rem;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+
+  .wether__cover {
+    height: 65vh;
+  }
+  .wether__left {
+    margin-top: 5rem;
+  }
+
+  .wether__left__city {
+    font-size: 2rem;
+  }
+  .wether__left__temp {
+    font-size: 2rem;
+  }
+  .wether__left__icon {
+    width: 2rem;
+  }
+  .wether__left__date{
+    font-size: 1rem;
+  }
+  .wether__left {
+    margin-top: 11rem;
+    gap: 1rem;
+  }
+  .wether__details {
+    width: 100%;
+    max-width: 30rem;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+  .wether__right {
+    width: 100%;
+    max-width: 30rem;
+  }
+.wether__ritht__text{
+    margin-top: 4rem;
+  }
+  .wether__right__cpation {
+    font-size: 1.2rem;
+  }
+  .wether__ritht__text {
+    font-size: 1.2rem;
+  }
+  .header__search__icon{
+    width: 1.5rem;
+  }
+  .input__search{
+    font-size: 1rem;
+    display: none
+  }
+  .header__search__box{
+    gap: 0.5rem;
+    justify-content: end;
+    border-bottom: none;
   }
 }

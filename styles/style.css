@@ -3,24 +3,252 @@
 @import "./variable.css";
 @import "./container.css";
 
-html{
+html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
-body{
+body {
+  width: 100%;
+  height: 100vh;
   font-size: 1.6rem;
+  font-family: var(--font-regular);
+  background-image: url("../images/bg-weather.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  background-position: center;
+  overflow: hidden;
 }
 
 /* helper class */
 
-a{
+a {
   text-decoration: none;
 }
 
 /* component */
 
+.header {
+  padding-top: 3rem;
+  position: relative;
+  z-index: 10;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.header__log {
+}
+.header__search__box {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid var(--color-white);
+  gap: 2rem;
+  padding-right: 1rem;
+  height: 3rem;
+  transition: all 250ms ease;
+}
+.input__search {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  height: 100%;
+  padding-bottom: 0;
+}
+::placeholder {
+  color: var(--color-white);
+}
+.header__search__icon {
+  width: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.wether__cover {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 51rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 250ms ease;
+}
+
+.main {
+}
+
+.wether__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.wether__left {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 15rem;
+}
+
+.wether__left__temp {
+  font-size: 7rem;
+  font-family: var(--font-medium);
+  transition: all 250ms ease;
+}
+
+.wether__left__box {
+}
+
+.wether__left__city {
+  font-family: var(--font-medium);
+  font-size: 5rem;
+  transition: all 250ms ease;
+}
+
+.wether__left__date {
+  font-size: 1.4rem;
+  transition: all 250ms ease;
+}
+
+.wether__left__icon {
+  transition: all 250ms ease;
+}
+
+.wether__right {
+  position: relative;
+  z-index: 10;
+  width: 40rem;
+  transition: all 250ms ease;
+}
+
+.wether__right__cpation {
+}
+
+.wether__ritht__text {
+  margin-top: 6rem;
+  text-transform: uppercase;
+  transition: all 250ms ease;
+}
+
+.wether__details {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.wether__detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wether__detail__text {
+}
+
+.wether__detail__number {
+}
+
+.wether__detail__img {
+}
+
+.wether__detail {
+}
+
+.wether__detail__box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wether__detail__text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wether__detail__number {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wether__detail__img {
+  width: 1.5rem;
+  transition: all 250ms ease;
+}
+
+.wether__detail__img__cloud {
+  width: 2rem;
+  transition: all 250ms ease;
+}
+.wether__detail__img__wind {
+  width: 2rem;
+  transition: all 250ms ease;
+}
+
+.forecasts {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.forecasts__caption {
+  margin-bottom: 3rem;
+  transition: all 250ms ease;
+}
+
+.forecast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forecast__left {
+  display: flex;
+  align-content: center;
+  gap: 3rem;
+}
+
+.forecast__img {
+  width: 3rem;
+  transition: all 250ms ease;
+}
+
+.forecast__box {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+}
+
+.forecast__time {
+  transition: all 250ms ease;
+}
+
+.forecast__status {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 250ms ease;
+}
+
+.forecast__right {
+}
+
+.forecast__temp {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 250ms ease;
+}

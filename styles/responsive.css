@@ -5,10 +5,82 @@
 }
 
 @media screen and (max-width: 992px) {
+  .wether__left__city {
+    font-size: 3rem;
+  }
+  .wether__left__temp {
+    font-size: 4rem;
+  }
+  .wether__left__icon {
+    width: 3rem;
+  }
+  .wether__cover {
+    width: 35rem;
+  }
+  .wether__right {
+    width: 30rem;
+  }
+  .header__search__box {
+    width: 30rem;
+  }
+  .wether__right__cpation {
+    font-size: 1.4rem;
+  }
+  .wether__ritht__text {
+    font-size: 1.4rem;
+  }
+  .wether__detail__text {
+    font-size: 1.4rem;
+  }
+  .wether__detail__number {
+    font-size: 1.4rem;
+  }
+  .wether__detail__text {
+    font-size: 1.4rem;
+  }
+  .wether__detail__number {
+    font-size: 1.4rem;
+  }
+  .wether__detail__img {
+    width: 1rem;
+  }
+  .wether__detail__img__cloud {
+    width: 1.5rem;
+  }
+  .wether__detail__img__wind {
+    width: 1.5rem;
+  }
+  .forecast__img {
+    width: 2.5rem;
+  }
+  .forecast__time {
+    font-size: 1.2rem;
+  }
+  .forecast__status {
+    font-size: 1.2rem;
+  }
+  .forecast__temp {
+    font-size: 1.4rem;
+  }
+  .forecast__left {
+    gap: 1.5rem;
+  }
+  .forecasts__caption {
+    font-size: 1.4rem;
+  }
+  .wether__left__date {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-image: url("../images/bg-weather-tablet.png");
+  }
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    background-image: url("../images/bg-weather-mobile.png");
+  }
 }

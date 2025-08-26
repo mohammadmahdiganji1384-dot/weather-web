@@ -5,49 +5,49 @@
 }
 
 @media screen and (max-width: 992px) {
-  .wether__left__city {
+  .weaher__left__city {
     font-size: 3rem;
   }
-  .wether__left__temp {
+  .weaher__left__temp {
     font-size: 4rem;
   }
-  .wether__left__icon {
+  .weaher__left__icon {
     width: 3rem;
   }
-  .wether__cover {
+  .weaher__cover {
     width: 35rem;
   }
-  .wether__right {
+  .weaher__right {
     width: 30rem;
   }
   .header__search__box {
     width: 30rem;
   }
-  .wether__right__cpation {
+  .weaher__right__cpation {
     font-size: 1.4rem;
   }
-  .wether__ritht__text {
+  .weaher__ritht__text {
     font-size: 1.4rem;
   }
-  .wether__detail__text {
+  .weaher__detail__text {
     font-size: 1.4rem;
   }
-  .wether__detail__number {
+  .weaher__detail__number {
     font-size: 1.4rem;
   }
-  .wether__detail__text {
+  .weaher__detail__text {
     font-size: 1.4rem;
   }
-  .wether__detail__number {
+  .weaher__detail__number {
     font-size: 1.4rem;
   }
-  .wether__detail__img {
+  .weaher__detail__img {
     width: 1rem;
   }
-  .wether__detail__img__cloud {
+  .weaher__detail__img__cloud {
     width: 1.5rem;
   }
-  .wether__detail__img__wind {
+  .weaher__detail__img__wind {
     width: 1.5rem;
   }
   .forecast__img {
@@ -68,7 +68,7 @@
   .forecasts__caption {
     font-size: 1.4rem;
   }
-  .wether__left__date {
+  .weaher__left__date {
     font-size: 1.2rem;
   }
 }
@@ -77,7 +77,7 @@
   body {
     background-image: url("../images/bg-weather-tablet.png");
   }
-  .wether__cover {
+  .weaher__cover {
     left: 0;
     height: 55vh;
     top: auto;
@@ -90,39 +90,39 @@
   .forecasts {
     display: none;
   }
-  .wether__wrapper {
+  .weaher__wrapper {
     flex-direction: column;
     height: 87vh;
     align-items: flex-end;
   }
-  .wether__details {
+  .weaher__details {
     padding-bottom: 5rem;
     width: 40rem;
   }
-  .wether__right {
+  .weaher__right {
     margin: 0 auto;
     padding-bottom: 2rem;
     width: 40rem;
   }
-  .wether__right__cpation {
+  .weaher__right__cpation {
     text-align: center;
   }
-  .wether__ritht__text {
+  .weaher__ritht__text {
     text-align: center;
     margin-top: 3rem;
   }
-  .wether__left {
+  .weaher__left {
     margin-top: 14rem;
     margin-right: auto;
     margin-bottom: 0;
   }
-  .wether__left__city {
+  .weaher__left__city {
     font-size: 4rem;
   }
-  .wether__left__temp {
+  .weaher__left__temp {
     font-size: 6rem;
   }
-  .wether__left__icon {
+  .weaher__left__icon {
     width: 5rem;
   }
 }
@@ -132,100 +132,98 @@
     background-image: url("../images/bg-weather-mobile.png");
   }
 
-  .wether__cover {
+  .weaher__cover {
     height: 65vh;
   }
-  .wether__left {
+  .weaher__left {
     margin-top: 5rem;
   }
 
-  .wether__left__city {
+  .weaher__left__city {
     font-size: 3rem;
   }
-  .wether__left__temp {
+  .weaher__left__temp {
     font-size: 5rem;
   }
-  .wether__left__icon {
+  .weaher__left__icon {
     width: 4rem;
   }
-  .wether__left {
+  .weaher__left {
     margin-top: 11rem;
     gap: 1rem;
   }
-  .wether__details {
+  .weaher__details {
     width: 100%;
     max-width: 30rem;
     gap: 3rem;
     margin-top: 4rem;
   }
-  .wether__right {
+  .weaher__right {
     width: 100%;
     max-width: 30rem;
   }
-.wether__ritht__text{
+  .weaher__ritht__text {
     margin-top: 4rem;
   }
-  .header__search__icon{
+  .header__search__icon {
     width: 1.5rem;
   }
-  .header__search__box{
+  .header__search__box {
     width: 20rem;
   }
 }
 
-
 @media screen and (max-width: 300px) {
-
-  .wether__cover {
+  .weaher__cover {
     height: 65vh;
   }
-  .wether__left {
+  .weaher__left {
     margin-top: 5rem;
   }
 
-  .wether__left__city {
+  .weaher__left__city {
     font-size: 2rem;
   }
-  .wether__left__temp {
+  .weaher__left__temp {
     font-size: 2rem;
   }
-  .wether__left__icon {
+  .weaher__left__icon {
     width: 2rem;
   }
-  .wether__left__date{
+  .weaher__left__date {
     font-size: 1rem;
   }
-  .wether__left {
+  .weaher__left {
     margin-top: 11rem;
     gap: 1rem;
   }
-  .wether__details {
+  .weaher__details {
     width: 100%;
     max-width: 30rem;
     gap: 3rem;
     margin-top: 4rem;
   }
-  .wether__right {
+  .weaher__right {
     width: 100%;
     max-width: 30rem;
   }
-.wether__ritht__text{
+  .weaher__ritht__text {
     margin-top: 4rem;
   }
-  .wether__right__cpation {
+  .weaher__right__cpation {
     font-size: 1.2rem;
   }
-  .wether__ritht__text {
+  .weaher__ritht__text {
     font-size: 1.2rem;
   }
-  .header__search__icon{
+  .header__search__icon {
     width: 1.5rem;
   }
-  .input__search{
+  .input__search {
     font-size: 1rem;
-    display: none
+    display: none;
   }
-  .header__search__box{
+  .header__search__box {
     gap: 0.5rem;
     justify-content: end;
     border-bottom: none;

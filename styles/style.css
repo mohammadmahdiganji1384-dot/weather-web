@@ -45,8 +45,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.header__log {
-}
+
 .header__search__box {
   width: 40rem;
   display: flex;
@@ -74,7 +73,7 @@ a {
   margin-bottom: 0.8rem;
 }
 
-.wether__cover {
+.weaher__cover {
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   position: absolute;
@@ -86,17 +85,14 @@ a {
   transition: all 250ms ease;
 }
 
-.main {
-}
-
-.wether__wrapper {
+.weaher__wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
 
-.wether__left {
+.weaher__left {
   position: relative;
   z-index: 10;
   display: flex;
@@ -105,47 +101,41 @@ a {
   margin-bottom: 15rem;
 }
 
-.wether__left__temp {
+.weaher__left__temp {
   font-size: 7rem;
   font-family: var(--font-medium);
   transition: all 250ms ease;
 }
 
-.wether__left__box {
-}
-
-.wether__left__city {
+.weaher__left__city {
   font-family: var(--font-medium);
   font-size: 5rem;
   transition: all 250ms ease;
 }
 
-.wether__left__date {
+.weaher__left__date {
   font-size: 1.4rem;
   transition: all 250ms ease;
 }
 
-.wether__left__icon {
+.weaher__left__icon {
   transition: all 250ms ease;
 }
 
-.wether__right {
+.weaher__right {
   position: relative;
   z-index: 10;
   width: 40rem;
   transition: all 250ms ease;
 }
 
-.wether__right__cpation {
-}
-
-.wether__ritht__text {
+.weaher__ritht__text {
   margin-top: 6rem;
   text-transform: uppercase;
   transition: all 250ms ease;
 }
 
-.wether__details {
+.weaher__details {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -154,49 +144,38 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-.wether__detail {
+.weaher__detail {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.wether__detail__text {
-}
 
-.wether__detail__number {
-}
-
-.wether__detail__img {
-}
-
-.wether__detail {
-}
-
-.wether__detail__box {
+.weaher__detail__box {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.wether__detail__text {
+.weaher__detail__text {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.wether__detail__number {
+.weaher__detail__number {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.wether__detail__img {
+.weaher__detail__img {
   width: 1.5rem;
   transition: all 250ms ease;
 }
 
-.wether__detail__img__cloud {
+.weaher__detail__img__cloud {
   width: 2rem;
   transition: all 250ms ease;
 }
-.wether__detail__img__wind {
+.weaher__detail__img__wind {
   width: 2rem;
   transition: all 250ms ease;
 }

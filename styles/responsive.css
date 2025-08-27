@@ -74,9 +74,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url("../images/bg-weather-tablet.png");
-  }
   .weaher__cover {
     left: 0;
     height: 55vh;
@@ -128,9 +125,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  body {
-    background-image: url("../images/bg-weather-mobile.png");
-  }
 
   .weaher__cover {
     height: 65vh;

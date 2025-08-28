@@ -9,7 +9,8 @@ const humidityTextElem = document.getElementById("humitidy");
 const cloudyTextElem = document.getElementById("cloudy");
 const windTextElem = document.getElementById("wind");
 const bgCoverElem = document.getElementById("bgCover");
-
+const moduleElem = document.getElementById("module");
+const bntCloseModuleElem = document.getElementById("btn-close-module");
 let cityName = "iran";
 
 const loadPage = () => {
@@ -23,17 +24,31 @@ const getDataWeather = () => {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=81721fee3d7a9e75a4fe9ed4e0f4b170`
   )
-    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      if (!res.ok) {
+        moduleElem.classList.remove("module__close");
+        moduleElem.classList.add("module__open");
+        bntCloseModuleElem.style.visibility = "visible";
+      } else {
+        return res.json();
+      }
+    })
     .then((data) => {
       console.log(data);
-      allDataWeather = data;
-      setValueElements(data);
+      if (data) {
+        console.log("yes");
+        allDataWeather = data;
+        setValueElements(data);
+      }
     });
 };
 
-const onChangeHandlerInputSearch = (event) => {
-  cityName = event.target.value;
-  getDataWeather();
+const onKeyDownHandlerPage = (event) => {
+  if (event.key == "Enter") {
+    cityName = event.target.value;
+    getDataWeather();
+  }
 };
 
 const setValueElements = (data) => {
@@ -58,18 +73,18 @@ const setValueElements = (data) => {
   const tempMaxeValue = Number(data.main.temp_max) - 273.15;
   tempMaxTextElem.innerHTML = tempMaxeValue.toFixed(2) + "°";
 
-  const tempMinValue = Number(data.main.temp_max) - 273.15;
+  const tempMinValue = Number(data.main.temp_min) - 273.15;
   tempMinTextElem.innerHTML = tempMinValue.toFixed(2) + "°";
 
   humidityTextElem.innerHTML = data.main.humidity + "%";
 
   cloudyTextElem.innerHTML = data.clouds.all + "%";
 
-  const wind = Number(data.wind.speed) - 3.6;
+  const wind = Number(data.wind.speed) * 3.6;
   windTextElem.innerHTML = wind.toFixed(1) + " km/h";
 };
 
-const resizePage = (event) => {
+const resizePage = () => {
   console.log();
   if (window.innerWidth > 768) {
     bgCoverElem.setAttribute("src", "./images/bg-weather.png");
@@ -80,6 +95,13 @@ const resizePage = (event) => {
   }
 };
 
+const closeModule = () => {
+  moduleElem.classList.remove("module__open");
+  moduleElem.classList.add("module__close");
+  bntCloseModuleElem.style.visibility = "hidden";
+};
+
 window.addEventListener("load", loadPage);
-inputSearchElem.addEventListener("change", onChangeHandlerInputSearch);
 window.addEventListener("resize", resizePage);
+bntCloseModuleElem.addEventListener("click", closeModule);
+window.addEventListener("keyup", onKeyDownHandlerPage);

@@ -26,7 +26,7 @@ body {
   overflow: hidden;
 }
 
-.bg__cover{
+.bg__cover {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -34,7 +34,7 @@ body {
   right: 0;
   z-index: -1;
 }
-.bg__cover__img{
+.bg__cover__img {
   width: 100%;
   height: 100%;
 }
@@ -163,7 +163,6 @@ a {
   align-items: center;
 }
 
-
 .weaher__detail__box {
   display: flex;
   align-items: center;
@@ -243,4 +242,93 @@ a {
 .forecast__temp {
   color: rgba(255, 255, 255, 0.7);
   transition: all 250ms ease;
+}
+
+.module {
+  position: absolute;
+  width: 30rem;
+  background-color: rgba(0s, 0, 0, 0.3);
+  height: 30rem;
+  color: black;
+  top: 0rem;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
+  border: 1px solid white;
+  animation-iteration-count: initial;
+  animation-duration: 800ms;
+  animation-timing-function: ease;
+  animation-timeline: initial;
+  visibility: hidden;
+  z-index: 100;
+
+}
+.module__open{
+  animation-name: animationModuleOpen;
+  visibility: visible;
+}
+
+.module__close{
+  animation-name: animationModuleClose;
+  visibility: hidden;
+}
+
+.module__error__icon {
+  width: 13rem;
+}
+
+.module__text {
+  margin-top: 3rem;
+  color: white;
+}
+
+.module__btn {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-family: var(--font-regular);
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.module__btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes animationModuleOpen {
+    0%{
+      top: -100rem;
+      transform: rotate(0);
+      visibility: visible;
+    }
+    100%{
+      top: 0rem;
+      bottom: 0;
+      transform: rotate(360deg);
+    }
+}
+
+@keyframes animationModuleClose {
+  0%{
+    top: 0rem;
+    bottom: 0;
+    transform: rotate(360deg);
+    visibility: visible;
+  }
+  100%{
+    top: -100rem;
+    transform: rotate(-360deg);
+    visibility: hidden;
+  }
 }

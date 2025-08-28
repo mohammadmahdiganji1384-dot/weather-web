@@ -37,12 +37,10 @@
       <div class="container">
         <div class="weaher__wrapper">
           <div class="weaher__left">
-            <span class="weaher__left__temp" id="temp">16°</span>
+            <span class="weaher__left__temp" id="temp">Temp°</span>
             <div class="weaher__left__box">
-              <h2 class="weaher__left__city" id="city-text">London</h2>
-              <span class="weaher__left__date" id="date"
-                >06:09 - Monday, 9 Sep ‘23</span
-              >
+              <h2 class="weaher__left__city" id="city-text">City or Contry</h2>
+              <span class="weaher__left__date" id="date">date</span>
             </div>
             <img
               class="weaher__left__icon"
@@ -57,7 +55,7 @@
               <div class="weaher__detail">
                 <span class="weaher__detail__text">Temp max</span>
                 <div class="weaher__detail__box">
-                  <span class="weaher__detail__number" id="temp-max">19°</span>
+                  <span class="weaher__detail__number" id="temp-max">0°</span>
                   <img
                     class="weaher__detail__img"
                     src="./images/svg/tempmax.svg"
@@ -68,7 +66,7 @@
               <div class="weaher__detail">
                 <span class="weaher__detail__text">Temp min</span>
                 <div class="weaher__detail__box">
-                  <span class="weaher__detail__number" id="temp-min">15°</span>
+                  <span class="weaher__detail__number" id="temp-min">0°</span>
                   <img
                     class="weaher__detail__img"
                     src="./images/svg/tempmin.svg"
@@ -79,7 +77,7 @@
               <div class="weaher__detail">
                 <span class="weaher__detail__text">Humadity</span>
                 <div class="weaher__detail__box">
-                  <span class="weaher__detail__number" id="humitidy">58%</span>
+                  <span class="weaher__detail__number" id="humitidy">0%</span>
                   <img
                     class="weaher__detail__img"
                     src="./images/svg/humid.svg"
@@ -90,7 +88,7 @@
               <div class="weaher__detail">
                 <span class="weaher__detail__text">Cloudy</span>
                 <div class="weaher__detail__box">
-                  <span class="weaher__detail__number" id="cloudy">86%</span>
+                  <span class="weaher__detail__number" id="cloudy">0%</span>
                   <img
                     class="weaher__detail__img__cloud"
                     src="./images/svg/Cloudy.svg"
@@ -186,7 +184,21 @@
     </main>
     <div class="weaher__cover"></div>
     <div class="bg__cover">
-      <img id="bgCover" class="bg__cover__img" src="./images/weathersunnydesktop.png" alt="">
+      <img
+        id="bgCover"
+        class="bg__cover__img"
+        src="./images/weathersunnydesktop.png"
+        alt=""
+      />
+    </div>
+    <div class="module" id="module">
+      <img
+        class="module__error__icon"
+        src="./images/svg/errore.svg"
+        alt="error"
+      />
+      <p class="module__text">Lorem ipsum dolor sit amet.</p>
+      <button class="module__btn" id="btn-close-module">close</button>
     </div>
   </body>
 </html>
